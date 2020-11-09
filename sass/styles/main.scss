@@ -1,0 +1,80 @@
+@import "./vendor/normalize.scss";
+@import "./partials/typography";
+@import "./partials/colors";
+
+@media (min-width:1024px){
+    h1{
+        color:blue;
+    }
+}
+
+$primary-color:#414141;
+
+
+@mixin green-button ($size) {
+    border-radius: 7px;
+    font-size: $size;
+    background-color: green;    
+}
+
+.btn {
+    @include green-button(12px);
+}
+
+.green-btn{
+    @include green-button(20px);  
+}
+
+h1{
+    font-family: $primary-font;
+}
+
+h2{
+    font-family: $primary-font;
+}
+
+ .header__bar figure{
+     display: inline-block;
+ }
+ .header__bar h1{
+     display: inline-block;
+     color: white;
+ }
+ .header__bar{
+     background-color: #414141;
+ }
+ nav ul li{
+     display: inline;
+ }
+ nav{
+     padding: 15px;
+ }
+ .header__bar{
+     background-color: #414141;
+     padding: 15px;
+ }
+ .header__bar figure{
+     display: inline-block;
+ }
+ .header__bar figure img {
+     border-radius: 50%;
+ }
+ .header__bar h1 {
+     color: white;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+ nav ul li{
+     display: inline;
+     margin: 0 10px;
+ }
+ nav{
+     padding: 15px;
+     border-radius: 50%;
+ }
+ footer{
+     background-color: black;
+     padding: 10px;
+     text-align: center;
+     color: white;      
+ }
